@@ -1,0 +1,14 @@
+C=gcc
+CC=g++
+CFLAGS :=
+CFLAGS += -O2 -Wall -Wno-sign-compare
+CFLAGS += -D__STDC_FORMAT_MACROS
+CFLAGS += -I "/document/eclipse_workspace/c_work/icomet/icomet/deps/libevent-2.0.21-stable"
+CFLAGS += -I "/document/eclipse_workspace/c_work/icomet/icomet/deps/libevent-2.0.21-stable/include"
+CFLAGS += -I "/document/eclipse_workspace/c_work/icomet/icomet/deps/libevent-2.0.21-stable/compact"
+CLIBS :=
+CLIBS += -lrt -pthread
+CFLAGS += -I "/document/eclipse_workspace/c_work/icomet/icomet/deps/jemalloc-3.4.0/include"
+CLIBS += "/document/eclipse_workspace/c_work/icomet/icomet/deps/jemalloc-3.4.0/lib/libjemalloc.a"
+LIBEVENT_PATH = /document/eclipse_workspace/c_work/icomet/icomet/deps/libevent-2.0.21-stable
+JEMALLOC_PATH = /document/eclipse_workspace/c_work/icomet/icomet/deps/jemalloc-3.4.0
